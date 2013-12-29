@@ -87,14 +87,11 @@ catkin_package(
 )
 
 
-rosgo_force_generate_messages(
-    std_msgs
-    std_srvs
-    actionlib_msgs
-    geometry_msgs
-    sensor_msgs
-    nav_msgs
-)
+rosgo_generate_message_in_package(std_srvs)
+rosgo_generate_message_in_package(actionlib_msgs)
+rosgo_generate_message_in_package(geometry_msgs)
+rosgo_generate_message_in_package(sensor_msgs)
+rosgo_generate_message_in_package(nav_msgs)
 
 
 ###########
