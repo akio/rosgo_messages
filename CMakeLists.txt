@@ -1,11 +1,7 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(rosgo_messages)
 
-find_package(catkin REQUIRED COMPONENTS
-  message_generation
-  rosgo_build_tools
-  rosgo_core
-)
+find_package(catkin REQUIRED COMPONENTS gengo)
 
 catkin_package()
 
@@ -27,10 +23,11 @@ rosgo_generate_messages(
   rocon_service_pair_msgs
   rocon_std_msgs
   rocon_tutorial_msgs
-  rosjava_test_msgs
+  rosgraph_msgs
   scheduler_msgs
   sensor_msgs
   shape_msgs
+  std_msgs
   std_srvs
   stereo_msgs
   tf2_msgs
